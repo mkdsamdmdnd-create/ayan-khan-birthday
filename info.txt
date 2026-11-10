@@ -1,0 +1,51 @@
+# ============================================================
+#  AYAN KHAN'S BIRTHDAY WEBSITE - CONFIGURATION FILE
+#  Fill in the values below and save. The website will
+#  automatically load everything from here!
+# ============================================================
+
+# --- BASIC INFO ---
+birthday_person_name=Ayan Khan
+your_name=Awan
+age=19                        # e.g. 25 (leave blank to hide age)
+birthday_date=November 12              # e.g. November 10 (shown on page)
+birth_date=                   # e.g. 2007-11-12 (optional, used for real-time milestone counter)
+
+# --- PERSONAL MESSAGE ---
+# Write your heartfelt birthday message to Ayan here (can be multiple lines)
+message=
+ Wishing you all the happiness in the world today and always!
+ You are not just my cousin, you are my brother.
+ Love you loads, bhai!
+
+# --- FUN FACTS / THINGS ABOUT AYAN ---
+# Add up to 6 fun facts or things you love about him (one per line, start with -)
+fun_facts=
+ - Always the life of every party 🎉
+ - Has the best advice for everything
+ - The coolest older bhai anyone could ask for
+
+# --- PHOTO GALLERY ---
+# Put your photo filenames here (place photos in the same folder as index.html)
+# One filename per line, start with -
+# e.g. - photo1.jpg
+photos=
+ # - photo1.jpg
+ # - photo2.jpg
+ # - photo3.jpg
+
+# --- WISHES / BIRTHDAY QUOTES ---
+# Up to 5 extra birthday wishes to display on rotating cards (one per line)
+wishes=
+ - May every day bring you joy and laughter!
+ - Here's to another year of amazing adventures!
+ - You deserve all the best life has to offer!
+
+# --- SOCIAL / SONG ---
+# Optional: paste a YouTube embed link for a birthday song
+# e.g. https://www.youtube.com/embed/VIDEO_ID
+youtube_song=https://youtu.be/7xM6rCf02Go?si=kMqjTrUb6bhCPpXN&t=15
+
+# --- COLORS ---
+# Choose a color theme: purple | blue | gold | pink | green
+theme=blue
