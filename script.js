@@ -385,7 +385,14 @@ function parseConfig(raw) {
   const flushMultiline = () => {
     if (!currentKey) return;
     const values = multilineBuffer
-      .map(l => l.trim())
+      .map(l => {
+        let clean = l.trim();
+        const hashIdx = clean.indexOf('#');
+        if (hashIdx !== -1) {
+          clean = clean.substring(0, hashIdx).trim();
+        }
+        return clean;
+      })
       .filter(l => l && !l.startsWith('#'));
 
     if (['fun_facts', 'photos', 'wishes'].includes(currentKey)) {
@@ -407,13 +414,19 @@ function parseConfig(raw) {
     if (kv) {
       flushMultiline();
       const key = kv[1].trim();
-      const val = kv[2].trim();
+      let val = kv[2].trim();
+
+      // Strip inline comments starting with '#'
+      const hashIdx = val.indexOf('#');
+      if (hashIdx !== -1) {
+        val = val.substring(0, hashIdx).trim();
+      }
 
       if (['fun_facts', 'photos', 'wishes', 'message', 'gift_surprise'].includes(key)) {
         currentKey = key;
-        if (val && !val.startsWith('#')) multilineBuffer.push(val);
+        if (val) multilineBuffer.push(val);
       } else {
-        if (key in cfg && val && !val.startsWith('#')) {
+        if (key in cfg && val) {
           cfg[key] = val;
         }
       }

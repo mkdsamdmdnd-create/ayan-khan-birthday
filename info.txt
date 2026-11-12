@@ -7,9 +7,9 @@
 # --- BASIC INFO ---
 birthday_person_name=Ayan Khan
 your_name=Awan
-age=19                        # e.g. 25 (leave blank to hide age)
-birthday_date=November 12              # e.g. November 10 (shown on page)
-birth_date=                   # e.g. 2007-11-12 (optional, used for real-time milestone counter)
+age=19
+birthday_date=November 12
+birth_date=
 
 # --- PERSONAL MESSAGE ---
 # Write your heartfelt birthday message to Ayan here (can be multiple lines)
